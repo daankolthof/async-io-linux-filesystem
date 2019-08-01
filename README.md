@@ -1,4 +1,4 @@
 # async-io-linux-filesystem
-Asynchronous file I/O on Linux.
+Asynchronous file I/O on Linux using the epoll API.
 
-https://daankolthof.com/2019/07/18/asynchronous-i-o-on-linux/
+https://daankolthof.com/2019/08/01/asynchronous-file-i-o-on-linux-the-epoll-api/
