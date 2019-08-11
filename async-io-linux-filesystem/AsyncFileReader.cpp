@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 AsyncFileReader::AsyncFileReader()
-	: epoll_fd_(epoll_create(64)), // The size argument does not matter for modern versions of Linux.
+	: epoll_fd_(epoll_create1(0)),
 	stopped_(false)
 	{
 		static_assert(EVENT_BUFFER_SIZE > 0, "EVENT_BUFFER_SIZE must be greater than 0");
